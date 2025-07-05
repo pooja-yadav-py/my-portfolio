@@ -1,0 +1,71 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Warm Background with Gradient -->
+  <rect width="1200" height="800" fill="#2A2A2A"/>
+  
+  <!-- Code Background with Glow Effect -->
+  <rect x="0" y="0" width="1200" height="800" fill="url(#codeGradient)"/>
+  <defs>
+    <linearGradient id="codeGradient" x1="0" y1="0" x2="1200" y2="800">
+      <stop offset="0%" stop-color="#1a1a1a" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#2A2A2A" stop-opacity="0.95"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Code Text Background -->
+  <text x="40" y="60" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">import React from 'react';</text>
+  <text x="40" y="90" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">import { motion } from 'framer-motion';</text>
+  <text x="40" y="120" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">const About = () => {</text>
+  <text x="60" y="150" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">return (</text>
+  <text x="80" y="180" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">&lt;section className="about"&gt;</text>
+  <text x="100" y="210" fill="#FCB69F" font-family="monospace" font-size="14" opacity="0.4">&lt;h1&gt;About Me&lt;/h1&gt;</text>
+  
+  <!-- Desk Setup -->
+  <rect x="300" y="400" width="600" height="20" fill="#3A3A3A" rx="4"/>
+  
+  <!-- Laptop -->
+  <rect x="450" y="300" width="300" height="200" fill="#2A2A2A" rx="8"/>
+  <rect x="470" y="320" width="260" height="160" fill="#1A1A1A" rx="4"/>
+  
+  <!-- Screen Content -->
+  <text x="490" y="350" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">const Portfolio = () => {</text>
+  <text x="490" y="370" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">  return (</text>
+  <text x="490" y="390" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">    &lt;div&gt;</text>
+  <text x="490" y="410" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">      &lt;Projects /&gt;</text>
+  <text x="490" y="430" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">    &lt;/div&gt;</text>
+  <text x="490" y="450" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">  );</text>
+  <text x="490" y="470" fill="#FCB69F" font-family="monospace" font-size="10" opacity="0.8">};</text>
+  
+  <!-- Character -->
+  <!-- Hair -->
+  <path d="M 550 200 C 500 180, 480 240, 500 280 C 520 320, 580 320, 600 280 C 620 240, 600 180, 550 200" 
+        fill="#2A2A2A"/>
+  
+  <!-- Face -->
+  <path d="M 520 240 C 520 220, 580 220, 580 240 C 580 280, 520 280, 520 240" 
+        fill="#FFECD2"/>
+  
+  <!-- T-Shirt with "ME SPACE" -->
+  <path d="M 500 280 C 500 320, 600 320, 600 280 L 620 400 L 480 400 L 500 280" 
+        fill="#2A2A2A"/>
+  <text x="510" y="330" fill="#FCB69F" font-family="Arial" font-size="24" font-weight="bold">ME</text>
+  <text x="510" y="360" fill="#FCB69F" font-family="Arial" font-size="24" font-weight="bold">SPACE</text>
+  
+  <!-- Eyes -->
+  <circle cx="535" cy="250" r="3" fill="#2A2A2A"/>
+  <circle cx="565" cy="250" r="3" fill="#2A2A2A"/>
+  
+  <!-- Smile -->
+  <path d="M 540 265 C 550 275, 560 265, 560 265" 
+        stroke="#2A2A2A" 
+        stroke-width="2" 
+        fill="none"/>
+  
+  <!-- Warm Ambient Light Effect -->
+  <rect width="1200" height="800" fill="url(#ambientLight)"/>
+  <defs>
+    <linearGradient id="ambientLight" x1="0" y1="0" x2="1200" y2="800">
+      <stop offset="0%" stop-color="#FFECD2" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#FCB69F" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+</svg> 
