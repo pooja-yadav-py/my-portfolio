@@ -58,6 +58,9 @@ export default function ProjectModal({ isOpen, onClose, images, projectName }: P
             alt={`${projectName} screenshot ${currentImageIndex + 1}`}
             fill
             className="object-contain"
+            onError={() => {
+              console.error(`Failed to load image: ${images[currentImageIndex]}`);
+            }}
           />
           
           {/* Navigation arrows */}

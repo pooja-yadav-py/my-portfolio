@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaProjectDiagram, FaCode, FaDraftingCompass, FaLaptopCode, FaRobot, FaCloud, FaPlug } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaCode, FaLaptopCode, FaCloud } from "react-icons/fa";
 import ProjectModal from '@/components/ProjectModal';
 import { useState } from 'react';
 
@@ -75,8 +75,8 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl font-semibold text-[#6B5B4E] mb-6">React.js &bull; Next.js &bull; Tailwind CSS</h2>
             <p className="mb-8 text-lg text-[#4A3F35] max-w-xl">Frontend Developer with 4 years of experience in React.js, Next.js, Tailwind CSS, and converting Figma designs into pixel-perfect, responsive UIs. Skilled in building high-performance web applications with clean and maintainable code.</p>
             <div className="flex gap-4 mb-8">
-              <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaLinkedin /></a>
-              <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaLinkedin /></a>
+              <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaGithub /></a>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="px-8 py-3 rounded-lg bg-gradient-to-r from-[#cb9773] to-[#FFD5B8] text-[#4A3F35] font-semibold text-lg shadow hover:from-[#cb9773] hover:to-[#FCB69F] transition text-center">Get In Touch</a>
@@ -86,7 +86,17 @@ export default function Home() {
           {/* Right: Profile Image */}
           <div className="flex-1 flex justify-center md:justify-end mt-12 md:mt-0 relative z-10">
             <div className="relative inline-block">
-              <img src="/about.jpg" alt="Profile" className="w-70 h-70 md:w-100 md:h-100 rounded-full border-8 border-white shadow-xl object-cover" />
+              <Image 
+                src="/about.jpg" 
+                alt="Profile" 
+                width={280}
+                height={280}
+                className="w-70 h-70 md:w-100 md:h-100 rounded-full border-8 border-white shadow-xl object-cover"
+                priority
+                onError={() => {
+                  console.error('Failed to load profile image');
+                }}
+              />
               {/* Dev Badge */}
             </div>
           </div>
@@ -102,19 +112,19 @@ export default function Home() {
           <div className="flex-1">
             <h2 className="text-4xl md:text-5xl font-extrabold mb-8 text-[#4A3F35]">About Me</h2>
             <div className="space-y-6 text-[#6B5B4E] text-lg">
-              <p>Hi! I'm Pooja Yadav, a Frontend Developer based in Gurugram, Haryana. With 4 years of experience in React.js, Next.js, and Tailwind CSS, I specialize in converting Figma designs into pixel-perfect, responsive user interfaces.</p>
-              <p>I have a strong foundation in frontend technologies and basic knowledge of backend development with Node.js and MongoDB. I'm passionate about creating clean, maintainable code and delivering high-performance web applications.</p>
+              <p>Hi! I&apos;m Pooja Yadav, a Frontend Developer based in Gurugram, Haryana. With 4 years of experience in React.js, Next.js, and Tailwind CSS, I specialize in converting Figma designs into pixel-perfect, responsive user interfaces.</p>
+              <p>I have a strong foundation in frontend technologies and basic knowledge of backend development with Node.js and MongoDB. I&apos;m passionate about creating clean, maintainable code and delivering high-performance web applications.</p>
               <div className="mt-8">
                 <h3 className="text-2xl font-bold text-[#4A3F35] mb-4">🏆 Recognition</h3>
                 <div className="bg-gradient-to-r from-[#FFECD2] to-[#FCB69F]/20 p-4 rounded-lg">
-                  <p className="font-semibold text-[#4A3F35]">Star Performer – CODT Technologies (Feb 2024)</p>
+                  <p className="font-semibold text-[#4A3F35]">Star Performer - CODT Technologies (Feb 2024)</p>
                   <p className="text-[#6B5B4E]">Recognized for exceptional performance and contributions to the organization.</p>
                 </div>
               </div>
             </div>
             <div className="mt-10">
               <a
-                href="https://wa.me/918209792612?text=Hi%20Pooja%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer"
+                href="https://wa.me/918209792612?text=Hi%20Pooja%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20connect." target="_blank" rel="noopener noreferrer nofollow"
                 className="inline-block border-2 border-[#FCB69F] text-[#4A3F35] px-6 py-2 rounded-lg font-semibold text-lg hover:bg-[#FCB69F] hover:text-white transition"
               >
                 WhatsApp
@@ -124,7 +134,16 @@ export default function Home() {
           {/* Right: Profile Image */}
           <div className="flex-1 flex justify-center md:justify-end">
             <div className="bg-gradient-to-br from-[#FFECD2] to-[#FCB69F] rounded-2xl overflow-hidden shadow-lg w-80 h-100 my-20">
-              <img src="/about/about-me.png" alt="Profile" className="w-full h-full object-cover" />
+              <Image 
+                src="/about/about-me.png" 
+                alt="Profile" 
+                width={320}
+                height={400}
+                className="w-full h-full object-cover"
+                onError={() => {
+                  console.error('Failed to load about image');
+                }}
+              />
             </div>
           </div>
         </div>
@@ -249,9 +268,9 @@ export default function Home() {
                 <div className="absolute -left-8 top-8 w-5 h-5 bg-gradient-to-br from-[#4A3F35] to-[#FCB69F] rounded-full border-4 border-white" style={{zIndex:1}}></div>
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                   <h3 className="text-xl font-bold text-[#4A3F35]">🚀 Frontend Developer</h3>
-                  <span className="text-md font-semibold text-[#FCB69F] mt-2 md:mt-0">June 2022 – Present</span>
+                  <span className="text-md font-semibold text-[#FCB69F] mt-2 md:mt-0">June 2022 - Present</span>
                 </div>
-                <a href="https://codttech.com" target="_blank" rel="noopener noreferrer" className="text-[#FCB69F] font-semibold mb-2 inline-block hover:text-[#4A3F35] transition">CODT Technologies, Gurugram</a>
+                <a href="https://codttech.com" target="_blank" rel="noopener noreferrer nofollow" className="text-[#FCB69F] font-semibold mb-2 inline-block hover:text-[#4A3F35] transition">CODT Technologies, Gurugram</a>
                 <div className="mb-6">
                   <h4 className="font-semibold text-[#4A3F35] mb-2">RefVault Project:</h4>
                   <ul className="list-disc pl-5 space-y-2 text-[#6B5B4E]">
@@ -277,7 +296,7 @@ export default function Home() {
                 <div className="absolute -left-8 top-8 w-5 h-5 bg-gradient-to-br from-[#4A3F35] to-[#FCB69F] rounded-full border-4 border-white" style={{zIndex:1}}></div>
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-2">
                   <h3 className="text-xl font-bold text-[#4A3F35]">💻 Frontend Developer</h3>
-                  <span className="text-md font-semibold text-[#FCB69F] mt-2 md:mt-0">March 2021 – June 2022</span>
+                  <span className="text-md font-semibold text-[#FCB69F] mt-2 md:mt-0">March 2021 - June 2022</span>
                 </div>
                 <span className="text-[#FCB69F] font-semibold mb-2 inline-block">Freelancer</span>
                 <div className="mb-6">
@@ -315,6 +334,9 @@ export default function Home() {
                     alt={project.name}
                     fill
                     className="object-cover hover:opacity-90 transition-opacity"
+                    onError={() => {
+                      console.error(`Failed to load project image: ${project.images[0]}`);
+                    }}
                   />
                   <div className="absolute inset-0 bg-black/20 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity">
                     <span className="bg-white/90 px-4 py-2 rounded-full text-sm font-medium text-[#4A3F35]">
@@ -362,12 +384,12 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl md:text-4xl font-extrabold text-center mb-2 text-[#4A3F35]">Get In Touch</h2>
           <div className="w-24 h-1 mx-auto mb-6 bg-gradient-to-r from-[#4A3F35] via-[#FCB69F] to-[#FCB69F] rounded-full"></div>
-          <p className="text-center text-[#6B5B4E] mb-10 max-w-2xl mx-auto">Ready to work together? I'd love to hear about your project and discuss how we can bring your ideas to life.</p>
+          <p className="text-center text-[#6B5B4E] mb-10 max-w-2xl mx-auto">Ready to work together? I&apos;d love to hear about your project and discuss how we can bring your ideas to life.</p>
           <div className="flex flex-col lg:flex-row gap-8 max-w-4xl mx-auto">
             {/* Left: Contact Info */}
             <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg flex flex-col justify-between mb-4 lg:mb-0 hover:shadow-xl transition-shadow">
               <div>
-                <h3 className="text-xl font-bold text-[#4A3F35] mb-6">Let's Connect</h3>
+                <h3 className="text-xl font-bold text-[#4A3F35] mb-6">Let&apos;s Connect</h3>
                 <div className="space-y-4 mb-8">
                   <div className="flex items-center gap-4">
                     <span className="bg-gradient-to-br from-[#FCB69F] to-[#FFD5B8] p-3 rounded-lg text-[#4A3F35] text-xl"><FaEnvelope /></span>
@@ -385,10 +407,10 @@ export default function Home() {
                 <div className="mb-8">
                   <span className="block text-[#6B5B4E] mb-2">Connect with me:</span>
                   <div className="flex gap-4">
-                    <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+                    <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                       <FaLinkedin />
                     </a>
-                    <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+                    <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                       <FaGithub />
                     </a>
                   </div>
@@ -406,7 +428,7 @@ export default function Home() {
             {/* Right: Contact Form */}
             <div className="flex-1 bg-white/80 backdrop-blur-sm rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-bold text-[#4A3F35] mb-6">Send a Message</h3>
-              <form className="space-y-4">
+              <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
                 <div className="flex flex-col md:flex-row gap-4">
                   <input type="text" placeholder="Name" className="flex-1 px-4 py-3 rounded bg-[#FFECD2] text-[#6B5B4E] border border-[#FCB69F] focus:outline-none focus:ring-2 focus:ring-[#FCB69F] focus:border-transparent" />
                   <input type="email" placeholder="Email" className="flex-1 px-4 py-3 rounded bg-[#FFECD2] text-[#6B5B4E] border border-[#FCB69F] focus:outline-none focus:ring-2 focus:ring-[#FCB69F] focus:border-transparent" />
@@ -428,12 +450,12 @@ export default function Home() {
             <h3 className="text-xl font-bold text-[#4A3F35] mb-2">Portfolio</h3>
             <p className="text-[#6B5B4E] mb-2">Frontend Developer with 4 years of experience specializing in React.js, Next.js, and Tailwind CSS.</p>
             <p className="text-[#6B5B4E] mb-2">Expert in converting Figma designs into pixel-perfect, responsive UIs.</p>
-            <p className="text-[#6B5B4E] mb-4">Let's create something amazing together.</p>
+            <p className="text-[#6B5B4E] mb-4">Let&apos;s create something amazing together.</p>
             <div className="flex gap-4 mt-2">
-              <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+              <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                 <FaLinkedin />
               </a>
-              <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+              <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                 <FaGithub />
               </a>
             </div>

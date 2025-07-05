@@ -34,7 +34,7 @@ export default function Header() {
           <a
             href="/Resume.pdf"
             target="_blank"
-            rel="noopener noreferrer"
+            rel="noopener noreferrer nofollow"
             className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] text-[#4A3F35] font-semibold text-lg shadow hover:opacity-90 transition text-center"
           >
             Resume
@@ -64,7 +64,7 @@ export default function Header() {
             <a
               href="/Resume.pdf"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener noreferrer nofollow"
               className="px-5 py-2 rounded-lg bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] text-[#4A3F35] font-semibold text-lg shadow hover:opacity-90 transition text-center"
             >
               View Resume

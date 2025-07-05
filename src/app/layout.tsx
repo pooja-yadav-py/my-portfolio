@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://poojayadav.com'),
   title: "Pooja Yadav | Frontend Developer",
   description: "Frontend Developer with 4 years of experience specializing in React.js, Next.js, and Tailwind CSS. Expert in converting Figma designs into pixel-perfect, responsive UIs.",
   icons: {
@@ -40,6 +41,12 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Pooja Yadav | Frontend Developer',
+    description: 'Frontend Developer with expertise in React.js, Next.js, and Tailwind CSS',
+    images: ['/about/about-me.png'],
   },
 };
 
