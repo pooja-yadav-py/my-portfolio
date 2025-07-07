@@ -75,8 +75,8 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl font-semibold text-[#6B5B4E] mb-6">React.js &bull; Next.js &bull; Tailwind CSS</h2>
             <p className="mb-8 text-lg text-[#4A3F35] max-w-xl">Frontend Developer with 4 years of experience in React.js, Next.js, Tailwind CSS, and converting Figma designs into pixel-perfect, responsive UIs. Skilled in building high-performance web applications with clean and maintainable code.</p>
             <div className="flex gap-4 mb-8">
-              <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaLinkedin /></a>
-              <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaGithub /></a>
+              <a href="https://www.linkedin.com/in/pooja-yadav-py" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaLinkedin /></a>
+              <a href="https://github.com/pooja-yadav-py" target="_blank" rel="noopener noreferrer nofollow" className="border-2 border-[#4A3F35] hover:border-[#FCB69F] text-[#4A3F35] hover:text-[#FCB69F] rounded-full p-3 text-2xl transition"><FaGithub /></a>
             </div>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="px-8 py-3 rounded-lg bg-gradient-to-r from-[#cb9773] to-[#FFD5B8] text-[#4A3F35] font-semibold text-lg shadow hover:from-[#cb9773] hover:to-[#FCB69F] transition text-center">Get In Touch</a>
@@ -407,10 +407,10 @@ export default function Home() {
                 <div className="mb-8">
                   <span className="block text-[#6B5B4E] mb-2">Connect with me:</span>
                   <div className="flex gap-4">
-                    <a href="https://www.linkedin.com/in/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+                    <a href="https://www.linkedin.com/in/pooja-yadav-py" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                       <FaLinkedin />
                     </a>
-                    <a href="https://github.com/pooja-yadav" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
+                    <a href="https://github.com/pooja-yadav-py" target="_blank" rel="noopener noreferrer nofollow" className="bg-gradient-to-r from-[#FCB69F] to-[#FFD5B8] p-2 rounded-full text-[#4A3F35] text-lg flex items-center justify-center shadow hover:opacity-80 transition">
                       <FaGithub />
                     </a>
                   </div>
